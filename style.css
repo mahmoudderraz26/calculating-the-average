@@ -1,4 +1,9 @@
-H1, H2 {
+H1 {
 	font-family: 'Noto Kufi Arabic', sans-serif;
+	text-align: center;
+}
+
+H2 {
+	font-family: 'Tajawal', sans-serif;
 	text-align: center;
 }
