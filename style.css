@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 H1 {
 	font-family: 'Noto Kufi Arabic', sans-serif;
 	text-align: center;
@@ -6,22 +10,115 @@ H1 {
 
 H2 {
 	font-family: "Tajawal", sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
 	text-align: center;
-	font-size: 16pt;
+	font-size: 20pt;
 }
 
 .header {
-background-color: #5271ff;
-	position: absolute
-	right: 0;
 	top: 0;
+	right: 0;
 	width: 100%;
-	height: 100px
+	height: 30px;
+	background-color: #5271ff;
+	display: flex;
+	align-items: center;
+	padding: 10px;
 }
 
+.menulogo {
+	display: flex;
+	align-items: center;
+	padding: 1px;
+	margin-left: auto;
+}
 
+.menus {
+	display: flex;
+	justify-content: space-evenly;
+	flex: 1;
+}
 
+.menus a{
+	color: white;
+	text-decoration: none;
+	font-family: "Tajawal", sans-serif;
+}
 
+#site-logo {
+	height: 30px;
+	width: auto;
+	margin-left: 10px;
+}
 
+.menu {
+	position: fixed;
+	top: 50;
+	width: 150px;
+	right: -250px;
+	height: 100%;
+	background:#eee;
+	box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+	padding-top:60px;
+	transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	z-index: 999;
+	padding: 20px;
+	font-family: "Tajawal", sans-serif;
+}
+
+.menu-btn{
+	font-size: 20px;
+	background:#5271ff;
+	color:white;
+	border:none;
+	padding:10px 15px;
+	cursor:pointer;
+}
+
+.menu a{
+  display:block;
+  padding:15px;
+  text-decoration:none;
+  color:#5271ff;
+}
+
+.menu a:hover{
+  background:#ddd;
+}
+
+.menu.open {
+    right: 0px;
+}
+
+.menu-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 998;
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#overlay.show {
+    display: block;
+}

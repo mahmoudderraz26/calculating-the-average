@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<html lang="ar" dir="rtl">
 	<head>
 		<title>مجرة البرمجة</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width", initial-scale=1.0">
+		<meta name="viewport" content="width=device-width" initial-scale=1.0">
 		<link rel="icon" type="image/x-icon" href="svg/logo_blue.svg">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,28 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-			<h1>مرحبا بكم في موقع مجرة البرمجة</h1>
-			<h2>هنا ستتعلم كلما يتعلق بالبرمجة</h2>
+		<div class="header">
+			<div class="menulogo">
+			<button id="menu-btn" class="menu-btn" onclick="toggleMenu()">☰</button>
+			<a href="https://mahmoudderraz26.github.io/programming/" target="_blank"><img src="./logos/majarra.svg" alt="site logo" id="site-logo"></a>
+			</div>
+				<div class="menus">
+					<a href="#">HTML</a>
+					<a href="#">CSS</a>
+					<a href="#">JAVASCRIPT</a>
+					<a href="/Result Calculator\resultcalculator.html"">Result Calculator</a>
+				</div>
+			</div>
+		</div>
+		<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+		<div id="menu" class="menu">
+			<a href="#">HTML</a>
+			<a href="#">CSS</a>
+			<a href="#">JAVASCRIPT</a>
+			<a href="/Result Calculator\resultcalculator.html"">Result Calculator</a>
+		</div>
+		<h1>مرحبا بكم في موقع مجرة البرمجة</h1>
+		<h2>هنا ستتعلم كلما يتعلق بالبرمجة</h2>
+	<script src="script.js"></script>
 	</body>
 </html>
