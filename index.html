@@ -3,8 +3,8 @@
 	<head>
 		<title>مجرة البرمجة</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width" initial-scale=1.0">
-		<link rel="icon" type="image/x-icon" href="svg/logo_blue.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="logos/majarra.svg">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Symbols:wght@100..900&family=Playwrite+FR+Trad&display=swap" rel="stylesheet">
@@ -17,25 +17,33 @@
 		<div class="header">
 			<div class="menulogo">
 			<button id="menu-btn" class="menu-btn" onclick="toggleMenu()">☰</button>
-			<a href="https://mahmoudderraz26.github.io/programming/" target="_blank"><img src="./logos/majarra.svg" alt="site logo" id="site-logo"></a>
+			<a href="index.html" target="_blank"><img src="./logos/majarra.svg" alt="site logo" id="site-logo"></a>
 			</div>
-				<div class="menus">
-					<a href="#">HTML</a>
-					<a href="#">CSS</a>
-					<a href="#">JAVASCRIPT</a>
-					<a href="Result Calculator\index.html">Result Calculator</a>
-				</div>
+				<nav class="menus">
+					<a href="html/html1.html">HTML</a>
+					<a href="css/css1.html">CSS</a>
+					<a href="javascript/javascript1.html">JAVASCRIPT</a>
+					<a href="ResultCalculator\resultcalculator.html"  target="_blank">Result Calculator</a>
+				</nav>
 			</div>
 		</div>
 		<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
-		<div id="menu" class="menu">
-			<a href="#">HTML</a>
-			<a href="#">CSS</a>
-			<a href="#">JAVASCRIPT</a>
-			<a href="Result Calculator\index.html">Result Calculator</a>
+		<nav id="menu" class="menu">
+			<a href="html/html1.html">HTML</a>
+			<a href="css/css1.html">CSS</a>
+			<a href="javascript/javascript1.html">JAVASCRIPT</a>
+			<a href="ResultCalculator\resultcalculator.html" target="_blank">Result Calculator</a>
+		</nav>
+		<h1>مجرة البرمجة</h1>
+		<p>هي منصة تعليمية تقوم على تقديم دروس البرمجة بطريقة مبسطة</p>
+		<br><br>
+		<h2>خطط الدراسة</h2>
+		<div class="LearnPlan">
+		<a href="html/html1.html"><img src="logos/HTML5_Logo.svg" alt="HTML" class="LearnPlanimg"></a>
+		<a href="css/css1.html"><img src="logos/CSS_Logo.svg" alt="CSS" class="LearnPlanimg"></a>
+		<a href="javascript/javascript1.html"><img src="logos/JavaScript_Logo.svg" alt="JAVASCRIPT" class="LearnPlanimg"></a>
 		</div>
-		<h1>مرحبا بكم في موقع مجرة البرمجة</h1>
-		<h2>هنا ستتعلم كلما يتعلق بالبرمجة</h2>
+		<footer>جميع الحقوق محفوظة مجرة البرمجة 2026 </footer>
 	<script src="script.js"></script>
 	</body>
 </html>
